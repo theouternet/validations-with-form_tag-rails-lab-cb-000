@@ -1,17 +1,17 @@
 <h2>Create an Author</h2>
 <%= form_tag authors_path, method: "post" do %>
   <div class="field">
-    <%= label_tag "name", "Name" %>
+    <%= label_tag "name", @author.name %>
     <%= text_field_tag "name" %>
   </div>
 
   <div class="field">
-    <%= label_tag "email", "Email" %>
+    <%= label_tag "email", @author.email %>
     <%= text_field_tag "email" %>
   </div>
 
   <div class="field">
-    <%= label_tag "phone_number", "Phone Number" %>
+    <%= label_tag "phone_number", @author.phone_number %>
     <%= text_field_tag "phone_number" %>
   </div>
 
