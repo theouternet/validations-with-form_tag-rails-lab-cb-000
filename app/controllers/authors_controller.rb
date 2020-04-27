@@ -24,7 +24,6 @@ end
     @author.assign_attributes(author_params)
     if @author.valid? 
           redirect_to author_path(@author)
-
   end 
 end 
 
